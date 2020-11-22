@@ -1,1 +1,3 @@
 学习笔记
+在python中，queue是基于deque实现的。deque拥有queue的全部特性，所以queue的实现相当于只利用了deque的部分特性。
+在python中，heapq基于堆的特性来实现的，其中堆则直接借助list来实现。其中，算法的核心就是维护这个堆。
