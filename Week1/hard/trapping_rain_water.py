@@ -30,3 +30,10 @@ class Solution(object):
             stack.append((i, ele))
             memo = 0
         return total
+
+
+
+
+
+
+

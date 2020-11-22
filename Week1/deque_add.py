@@ -3,15 +3,12 @@
 
 from collections import deque
 
-class Deque_bis(object):
+# initiate a deque of python
+test_deq = deque([1,2,3,4,5])
+# 相当于java里的add_last
+test_deq.append(6)
+# 相当于java里的add_first
+test_deq.appendleft(0)
 
-    # nums built from deque
-    def add_last(self, nums, obj):
-        return nums.append(obj)
-
-
-    def add_first(self, nums, obj):
-        return nums.appendleft(obj)
-
-
+print(test_deq)
 
