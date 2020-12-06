@@ -33,3 +33,19 @@ class Solution(object):
                     preorder_helper(child)
             return vec
         return preorder_helper(root)
+
+class Solution(object):
+    def preorder(self, root):
+        """
+        :type root: Node
+        :rtype: List[int]
+        """
+        vec = []
+        if not root:
+            return vec
+        # root first
+        vec.append(root.val)
+        # preorder in children
+        for child in root.children:
+            vec.extend(self.preorder(child))
+        return vec
